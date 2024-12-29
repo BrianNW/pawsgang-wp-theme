@@ -139,7 +139,7 @@ add_action( 'widgets_init', 'pawsgang_widgets_init' );
  */
 function pawsgang_scripts() {
 	wp_enqueue_style( 'pawsgang-style', get_stylesheet_uri(), array(), _S_VERSION );
-	wp_enqueue_style( 'pawsgang-main', get_stylesheet_uri() . '/css/main.css')
+	wp_enqueue_style( 'pawsgang-main', get_stylesheet_uri() . '/css/main.css');
 	wp_style_add_data( 'pawsgang-style', 'rtl', 'replace' );
 
 	wp_enqueue_script( 'pawsgang-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );

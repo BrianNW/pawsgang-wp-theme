@@ -150,6 +150,15 @@ function pawsgang_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'pawsgang_scripts' );
 
+// Custom fonts
+
+function enqueue_custom_fonts() {
+	if(!is_admin()) {
+		wp_register_style('source_sans_pro', 'https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+		wp_enqueue_style('source_sans_pro')''
+	}
+}
+
 /**
  * Implement the Custom Header feature.
  */

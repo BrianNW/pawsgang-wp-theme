@@ -162,7 +162,7 @@ function enqueue_custom_fonts() {
 		wp_enqueue_style('nunito');
 	}
 }
-add_action('wo_enqueu_script', 'enqueue_custom_fonts');
+add_action('wp_enqueue_script', 'enqueue_custom_fonts');
 
 /**
  * Implement the Custom Header feature.
